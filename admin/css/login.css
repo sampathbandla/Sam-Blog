@@ -1,0 +1,54 @@
+.login_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login_div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login_div form input {
+  padding: 5px;
+  font-size: 15px;
+  width: 250px;
+}
+
+.login_div form button {
+  background-color: #5718e9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login_div form * {
+  margin-bottom: 20px;
+}
+
+.login_header h3 {
+  text-align: center !important;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 28px;
+}
+/*# sourceMappingURL=login.css.map */

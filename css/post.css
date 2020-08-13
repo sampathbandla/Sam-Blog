@@ -1,0 +1,37 @@
+.header2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.432)), to(rgba(0, 0, 0, 0.801))), url("https://firstsiteguide.com/wp-content/uploads/2020/05/internet-stats-640x400.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.801)), url("https://firstsiteguide.com/wp-content/uploads/2020/05/internet-stats-640x400.jpg");
+  padding: 100px;
+}
+
+.header2 h1 {
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.postdata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.postdata .post {
+  width: 50%;
+  padding: 25px 0px;
+}
+
+.postdata .details {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgba(128, 128, 128, 0.226);
+}
+/*# sourceMappingURL=post.css.map */

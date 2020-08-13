@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.header
+{
+    
+}
+.error
+{
+    position: absolute;
+    bottom: 10px;
+    color: rgb(245, 61, 61);
+    animation: cssAnimation 0s ease-in 5s forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+
+
+@import "color";
+
+
+
+body,html
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header
+{
+    padding: 20px;
+    background-color: $color1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0.137);
+    .left
+    {
+        h1
+        {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .right
+    {
+        display: flex;
+        align-items: center;
+        button
+        {
+            padding: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            width: 100px;
+            background-color: transparent;
+            color: White;
+            transition: ease 0.5s all;
+        }
+        button:hover
+        {
+            background-color: white;
+            color: $color1;
+        }
+    }
+}
+.menu
+{
+    display: flex;
+    background-color: $color1;
+    color: white;
+    border-bottom: solid 2px $color1;
+    ul
+    {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        li
+        {
+            padding: 10px;
+            cursor: pointer;
+            transition: ease 0.5s all;
+        }
+        li:hover
+        {
+            background-color: white;
+            color: $color1;
+        }
+        .active
+        {
+            background-color: $color1;
+            color: white;
+        }
+    }
+}
+
+.window
+{
+    position: relative;
+    width: 80%;
+    height: 50%;
+    max-height: 50%;
+    background-color: white;
+    box-shadow: 0 3px 6px #00000057;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    .window-content
+    {
+        overflow-y: auto;
+        max-height: 90%;
+    }
+    .window_header
+    {
+        background-color: $color1;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        justify-content: space-between;
+        position: sticky;
+        width: 100%;
+        .left
+        {
+            padding-left: 10px;
+            i
+            {
+                font-size: 20px;
+            }
+        }
+        .right
+        {
+            padding-right: 10px;
+            i
+            {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }

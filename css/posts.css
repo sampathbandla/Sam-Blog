@@ -1,0 +1,43 @@
+.content {
+  width: 80%;
+  padding: 10px;
+  overflow: auto;
+  height: 100%;
+}
+
+.content .posts {
+  padding: 50px;
+}
+
+.content .posts .post {
+  background-color: #e7e7e7;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.content .posts .post img {
+  border-radius: 0;
+  width: 30%;
+}
+
+.contentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.contentDiv .sidebar {
+  width: 15%;
+  padding: 50px;
+  background-color: #cfcfcf;
+  height: 100%;
+}
+
+.contentDiv .sidebar p {
+  font-weight: bold;
+}
+/*# sourceMappingURL=posts.css.map */

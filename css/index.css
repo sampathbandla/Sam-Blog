@@ -1,0 +1,119 @@
+.element1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.element1 h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.element1 p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.element1 p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.element1 p span.cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.element1 .post {
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.137);
+  padding: 15px;
+  width: 50%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+
+.element1 .post .tag {
+  text-transform: lowercase;
+}
+
+.content .element2 {
+  padding: 50px;
+}
+
+.content .element2 h3.title {
+  text-align: center;
+}
+
+.content .element2 .posts {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .element2 .posts .post {
+  margin-top: 50px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.103);
+  padding: 20px;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+/*# sourceMappingURL=index.css.map */

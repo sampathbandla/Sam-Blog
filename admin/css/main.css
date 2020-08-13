@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.error {
+  position: absolute;
+  bottom: 10px;
+  color: #f53d3d;
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+          animation: cssAnimation 0s ease-in 5s forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+body, html {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  padding: 20px;
+  background-color: #1f2838;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0.137);
+}
+
+.header .left h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .right button {
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  background-color: transparent;
+  color: White;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+}
+
+.header .right button:hover {
+  background-color: white;
+  color: #1f2838;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1f2838;
+  color: white;
+  border-bottom: solid 2px #1f2838;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.menu ul li {
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+}
+
+.menu ul li:hover {
+  background-color: white;
+  color: #1f2838;
+}
+
+.menu ul .active {
+  background-color: #1f2838;
+  color: white;
+}
+
+.window {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  max-height: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 6px #00000057;
+          box-shadow: 0 3px 6px #00000057;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.window .window-content {
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.window .window_header {
+  background-color: #1f2838;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+}
+
+.window .window_header .left {
+  padding-left: 10px;
+}
+
+.window .window_header .left i {
+  font-size: 20px;
+}
+
+.window .window_header .right {
+  padding-right: 10px;
+}
+
+.window .window_header .right i {
+  font-size: 20px;
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+/*# sourceMappingURL=main.css.map */
